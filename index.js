@@ -68,3 +68,31 @@ function handleMouseMove(event) {
   function setProperty(p, v) {
      container.style.setProperty(p, v);
   }
+
+//parallax scroll
+let vinilo1 = document.getElementById('vinilo1');
+let vinilo2 = document.getElementById('vinilo2');
+  
+window.addEventListener('scroll', function(){
+
+  let value = window.scrollY;
+  
+  vinilo1.style.top = 10 + value * -0.2 + 'px';
+  vinilo1.style.left = value * 1.3 + 'px';
+  vinilo2.style.top = 50 + value * -0.5 + 'px';
+  vinilo2.style.left = value * -5 + 'px';
+
+})
+
+//hover
+const myImage = document.getElementById('myImage');
+
+myImage.addEventListener('mouseover', function() {
+  myImage.style.transform = 'scale(1.2)';
+});
+
+myImage.addEventListener('mouseout', function() {
+  myImage.style.transform = 'scale(1)';
+});
+
+

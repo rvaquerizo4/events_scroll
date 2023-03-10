@@ -10,8 +10,8 @@ body {
 h1 {
   margin: 0;
   padding: 20px;
-  background-color: #333;
   color: #fff;
+  background-color: #333;
   text-align: center;
 }
 
@@ -56,6 +56,30 @@ ul {
   flex-wrap: wrap;
   justify-content: center;
 }
+.parallax-header{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #666;
+}
+.vinilo1, .vinilo2{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-image: url('./vinyl-record-vector-illustration-isolated-on-white-background-free-png.webp');
+  background-size: cover;
+}
+
+#vinilo1 {
+  top: 10px;
+  left: 0;
+}
+
+#vinilo2 {
+  top: 50px;
+  right: 0;
+}
+
+
 
 li {
   margin-right: 20px;
@@ -158,4 +182,32 @@ footer {
 
 
 
+
+.vinilo {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-image: url('ruta/a/la/imagen');
+  background-size: cover;
+}
+
+#vinilo1 {
+  top: 10px;
+  left: 0;
+}
+
+#vinilo2 {
+  top: 50px;
+  right: 0;
+}
+
+#myImage {
+  width: 200px;
+  height: 200px;
+  transition: transform 0.3s ease-in-out;
+}
+
+#myImage:hover {
+  transform: scale(1.2);
+}
 
